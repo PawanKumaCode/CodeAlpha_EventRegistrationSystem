@@ -55,7 +55,15 @@ CodeAlpha_EventRegistrationSystem/
 │   ├── serializers.py        # DRF serializers
 │   ├── tests.py
 │   └── views.py              # API logic
-│
+|
+├── screenshots/ 
+│ ├── 01-events-admin.png 
+│ ├── 02-registrations-admin.png 
+│ ├── 03-events-api.png 
+│ ├── 04-registration-success.png 
+│ ├── 05-registrations-api.png 
+│ └── 06-cancel-registration.png
+|
 ├── manage.py                 # Django management script
 ├── requirements.txt          # Project dependencies
 ├── README.md                 # Project documentation
@@ -156,6 +164,29 @@ DELETE /registrations/<registration_id>/cancel/
 
 ---
 
+## 📸 Project Screenshots
+
+### 1. Events Management (Admin Panel)
+Displays all events available in the system. Administrators can create, update, and manage event information through the Django Admin Panel.
+![All events](screenshots/01admin.png)
+
+### 2. Registrations Management (Admin Panel)
+Shows all user registrations stored in the database along with participant details and associated events.
+![All Registrations](screenshots/02event.png)
+### 3. View All Events API
+REST API endpoint that retrieves all available events from the database in JSON format.
+![events API](screenshots/03event-api.png)
+### 4. Event Registration API
+Demonstrates successful event registration by submitting user details and generating a registration record.
+![User Registration](screenshots/04registrations.png)
+### 5. View Registrations API
+Returns all registration records, allowing administrators to verify participant registrations.
+![Registrations at admin panel](screenshots/05user-registration_success-api.png)
+<!-- ### 6. Cancel Registration API -->
+<!-- Allows users to cancel an existing registration using the registration ID and receive a confirmation response. -->
+---
+
+
 ## 🔄 How the System Works
 
 1. The admin creates events through the Django Admin Panel.
@@ -167,26 +198,29 @@ DELETE /registrations/<registration_id>/cancel/
 7. Users can cancel their registration using the Cancel Registration API.
 8. Event organizers can manage events and registrations through the Django Admin Panel.
 
+---
 ### Workflow
 
 Admin Creates Event
-↓
+      
+       ↓
 User Views Events
-↓
+      
+       ↓
 User Registers for Event
-↓
+      
+       ↓
 Registration Stored in Database
-↓
+      
+       ↓
 User Views Registration
-↓
+      
+       ↓
 User Cancels Registration (Optional)
 
 
  ---
  
 
-## 👨‍💻 Author
-
-Pawan Kumar
 
 CodeAlpha Backend Development Internship Project

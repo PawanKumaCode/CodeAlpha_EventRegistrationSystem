@@ -182,8 +182,9 @@ Demonstrates successful event registration by submitting user details and genera
 ### 5. View Registrations API
 Returns all registration records, allowing administrators to verify participant registrations.
 ![Registrations at admin panel](screenshots/05user-registration_success-api.png)
-<!-- ### 6. Cancel Registration API -->
-<!-- Allows users to cancel an existing registration using the registration ID and receive a confirmation response. -->
+### 6. Cancel Registration API
+Allows users to cancel an existing registration using the registration ID and receive a confirmation response.
+![Cancel Registration](screenshots/06cancel-registration.png)
 ---
 
 
@@ -216,7 +217,7 @@ Registration Stored in Database
 User Views Registration
       
        ↓
-User Cancels Registration (Optional)
+User Cancels Registration
 
 
  ---
